@@ -18,31 +18,20 @@
 }
 #matchbar {
 	display: flex;
+	
 	flex-direction: row;
 	position: fixed;
 	justify-content: center;
 	width: 1148px;
-	height: 70px;
+	height: 60px;
 	top: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 	.CT {
 		color: var(--color-new-ct);
-		.round-thingy {
-			.inner {
-				background-color: #28abff;
-			}
-			background-color: #28abff80;
-		}
 	}
 	.T {
 		color: var(--color-new-t);
-		.round-thingy {
-			.inner {
-				background-color: #ffc600;
-			}
-			background-color: #ffc60080;
-		}
 	}
 	#timer {
 		display: flex;
@@ -52,7 +41,8 @@
 		height: 115px;
 		margin-left: 8px;
 		margin-right: 8px;
-		background-color: var(--sub-panel-color);
+		font-family: TitilliumWeb;
+		background-color: rgb(25, 42, 86);
         top: -10px;
         &.no-bo {
             height: 87px;
@@ -129,11 +119,11 @@
 		.logo {
 			display: flex;
 			flex-direction: row;
-			width: 105px;
-			height: 70px;
+			width: 70px;
+			height: 60px;
 			align-items: center;
 			overflow: hidden;
-			background-color: var(--sub-panel-color);
+			background-color: rgba(18, 26, 44, 0.9);
 			img {
 				max-width: 90%;
 				max-height: 65%;
@@ -163,12 +153,13 @@
 	.team-name {
 		display: flex;
 		width: 360px;
-		height: 70px;
+		height: 60px;
 		align-items: center;
 		justify-content: center;
 		font-weight: 600;
 		font-size: 30px;
-		background-color: var(--sub-panel-color);
+		font-family: TitilliumWeb;
+		background-color: rgba(18, 32, 66,0.9);
 	}
 	.round-thingy {
 		width: 60px;
@@ -188,12 +179,13 @@
 		display: flex;
 		flex-direction: row;
 		width: 77px;
-		height: 70px;
+		height: 60px;
 		align-items: center;
 		justify-content: center;
-		font-weight: 600;
+		font-weight: 800;
 		font-size: 36px;
-		background-color: var(--sub-panel-color);
+		font-family: TitilliumWeb;
+		background-color: rgba(18, 31, 63, 0.94);
 	}
 	.bar {
 		display: flex;
@@ -214,14 +206,14 @@
 	display: none;
 	opacity: 1;
 	width: 503px;
-	height: 50px;
-	top: 70px;
+	height: 40px;
+	top: 60px;
 	align-items: center;
-	color: black;
+	color: #192a56;
 	justify-content: center;
-	background-color: white;
+	background-color: #192a56;
 	font-size: 20px;
-	font-family: Montserrat;
+	font-family: TitilliumWeb;
     font-weight: 600;
     &.show {
         display: flex;
@@ -241,15 +233,15 @@
 	display: flex;
 	opacity: 1;
 	width: 503px;
-	height: 49px;
-	top: 70px;
+	height: 39px;
+	top: 60px;
 	align-items: center;
-	color: white;
+	color: #f5f6fa;
     justify-content: center;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(7, 19, 46, 0.95);
 	.defuse_plant_bar {
-		height: 49px;
-		background-color: #3c3c3c;
+		height: 39px;
+		background-color: rgb(35, 58, 116);
 		position: absolute;
 		width: 0%;
 	}
